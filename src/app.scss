@@ -1,0 +1,52 @@
+$whitebg: #FFFFFF;
+
+$black: #000000;
+
+$orangetext: #F28202;
+$redtextbright: #FF3A2D;
+$redpastello: #D74D52;
+$greytext: #777777;
+
+$greydark: #555555;
+
+$venom: #192836;
+
+
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header{
+    height: 75px;
+}
+
+
+.hero1{
+    background-image: url(/img/heroedit.jpg);
+    height: 500px;
+    background-color: pink;
+    background-repeat: no-repeat;  
+    position: relative;
+}
+.fonthero{
+    font-size: 40px;
+    text-align: center;
+    margin: auto;
+}
+.pad1{
+    padding-top: 150px;
+}
+
+.centerborder{
+    margin-top: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 1px solid;
+    line-height: 40px;
+    width: 100px;
+    text-align: center;
+}
