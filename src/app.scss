@@ -23,12 +23,12 @@ header{
 
 
 .hero1{
-    background-image: url(/img/heroedit.jpg);
     height: 500px;
     background-color: pink;
     background-repeat: no-repeat;  
     position: relative;
 }
+
 .fonthero{
     font-size: 40px;
     text-align: center;
@@ -36,6 +36,7 @@ header{
 }
 .pad1{
     padding-top: 150px;
+
 }
 
 .centerborder{
@@ -49,4 +50,5 @@ header{
     line-height: 40px;
     width: 100px;
     text-align: center;
+    padding: 5px 20px;
 }
