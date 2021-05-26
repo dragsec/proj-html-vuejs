@@ -1,3 +1,10 @@
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -6,6 +13,14 @@ body {
 /* colors */
 .redtext{
   color: #D74D52;
+}
+
+.greytext{
+  color: #A3B5CA;
+}
+
+.whitetext{
+  color: white;
 }
 
 
@@ -36,6 +51,10 @@ body {
 
 .textsmaller{
   font-size: 14px;
+}
+
+.textsmallest{
+  font-size: 12px;
 }
 
 .textcenter{
@@ -84,9 +103,9 @@ body {
 
 
 .centerborder {
-  margin-top: 40px;
+  margin-top: 20px;
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   border: 1px solid;
@@ -101,6 +120,44 @@ body {
   display: table;
   clear: both;  
 }
+
+
+/* 1 header */
+
+
+header {
+  height: 75px;
+  width: 1100px;
+  margin: auto;
+}
+.redlogo{
+  width: 150px;
+  position:absolute;
+  z-index: 1;
+}
+
+
+/* 2 hero */
+
+.fonthero {
+  font-size: 60px;
+  text-align: center;
+  margin: auto;
+}
+
+.hero1 {
+  height: 1031px;
+  width: 1920px;
+  background-repeat: no-repeat;
+  position: relative;
+  background-image: url(images/heroedit2.jpg);
+}
+
+
+
+
+/* 3 numbers */
+
 
 .container1{
   width: 1100px;
@@ -136,7 +193,7 @@ body {
   text-align: center;
 }
 
-
+/* 4 courses */
 
 .container3{
   width: 1100px;
@@ -162,6 +219,7 @@ body {
 }
 
 
+ /* 5 quote and events  */
 
 .bgquote{
   background-image: url(img/quote.png);
@@ -235,7 +293,7 @@ body {
   padding-left: 20px;
 }
 
-
+/* 6 blog */
 
 .containerG{
   width: 1100px;
@@ -268,10 +326,9 @@ body {
 }
 
 
-
+/*  7 immagini varie */
 .photos{
   margin-top: 100px;
-  height: 300px;
   width: 1920px;
 }
 .photos > div{
@@ -283,33 +340,83 @@ body {
   height: 300px;
   width: 480px;
   object-fit: cover;
+} 
+
+
+/* footer 
+*/
+
+.footer1{
+  background-color: #192735;
+  height: 500px;
+  padding: 100px;
+}
+
+.footercontainer1{
+  height: 150px;
+  width: 1100px;
+  margin: auto;
+  -moz-box-shadow: 0 0 25px #15222E;
+  -webkit-box-shadow: 0 0 25px #15222E;
+  box-shadow: 0 0 25px #15222E;
+
+  display: flex;
+  align-items: center;
+}
+
+.footercontainer1 > div{
+  display: inline-block;
+  margin-right: 40px;
+}
+.vertical1{
+  background: #23374B;
+  height: 80px;
+  width: 5px;
+}
+.place1{
+  height: 50px;
+  width: 300px;
+  display: inline-block;
+}
+.btnred{
+  background-color: #D74D52;
+  width: 150px;
+  height: 55px;
+  display: inline-block;
+  text-align: center;
+  line-height: 55px;
 }
 
 
+.copyright{
+  background-color: #15222E;
+  width: 1920px;
+}
+
+.copycontainer{
+  width: 1100px;
+  margin: auto;
+}
+.copycontainer > div{
+  display: inline-block;
+  margin: 15px 0;
+}
+
+.copycontainer > p{
+  display: inline-block;
+  float: right;
+  padding-left: 20px;
+}
+
+
+
+/* varie */
 
 .floatleft{
   float: left;
 }
 .floatright{
   float: right;
-}
-
-header {
-  height: 75px;
-}
-
-.fonthero {
-  font-size: 60px;
-  text-align: center;
-  margin: auto;
-}
-
-.hero1 {
-  height: 1000px;
-  background-color: pink;
-  background-repeat: no-repeat;
-  position: relative;
-  background-image: url(images/heroedit.jpg);
 }
 
 .pad1 {
