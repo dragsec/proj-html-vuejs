@@ -1,0 +1,30 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+header {
+  height: 75px;
+}
+
+.fonthero {
+  font-size: 40px;
+  text-align: center;
+  margin: auto;
+}
+
+.pad1 {
+  padding-top: 150px;
+}
+
+.centerborder {
+  margin-top: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid;
+  line-height: 40px;
+  width: 100px;
+  text-align: center;
+  padding: 5px 20px;
+}
