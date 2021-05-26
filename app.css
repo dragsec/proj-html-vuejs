@@ -269,6 +269,22 @@ body {
 
 
 
+.photos{
+  margin-top: 100px;
+  height: 300px;
+  width: 1920px;
+}
+.photos > div{
+  display: inline-block;
+  width: 480px;
+  height: 300px;
+}
+.photos > div > img{
+  height: 300px;
+  width: 480px;
+  object-fit: cover;
+}
+
 
 
 .floatleft{
