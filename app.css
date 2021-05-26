@@ -353,7 +353,7 @@ header {
 .footer1{
   background-color: #192735;
   height: 500px;
-  padding: 100px 0;
+  padding: 75px 0;
 }
 
 .footercontainer1{
@@ -391,11 +391,25 @@ header {
   line-height: 55px;
 }
 
+.footercontainer2{
+  width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 75px;
+}
+.footercontainer2 > div{
+  width: 275px;
+}
+.footercontainer2 > div > p{
+  margin-top: 20px;
+}
+
+
 
 .copyright{
   background-color: #15222E;
 }
-
 .copycontainer{
   width: 1100px;
   margin: auto;
@@ -404,12 +418,13 @@ header {
   display: inline-block;
   margin: 15px 0;
 }
-
 .copycontainer > p{
   display: inline-block;
   float: right;
   padding-left: 20px;
 }
+
+
 
 
 
