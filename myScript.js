@@ -37,22 +37,22 @@ var app2 = new Vue ({
             SupportArray:[
                 
                 {
-                text: "> Privacy",
-                url: "#"
-                },
-
-                {
-                    text:"> Terms",
+                    text: "Privacy",
                     url: "#"
                 },
 
                 {
-                    text:"> Cookie Policy",
+                    text:"Terms",
+                    url: "#"
+                },
+
+                {
+                    text:"Cookie Policy",
                     url:"#",
                 },
 
                 {
-                    text:"> Sitemap",
+                    text:"Sitemap",
                     url:"#",
                 },
 
@@ -60,27 +60,27 @@ var app2 = new Vue ({
 
             ExploreArray:[
                 {
-                    text: "> Accomodation",
+                    text: "Accomodation",
                     url: "#"
                 },
 
                 {
-                    text: "> Arc Academics",
+                    text: "Arc Academics",
                     url: "#"
                 },
 
                 {
-                    text: "> Central Services",
+                    text: "Central Services",
                     url: "#"
                 },
 
                 {
-                    text: "> Conferences and Events",
+                    text: "Conferences and Events",
                     url: "#"
                 },
 
                 {
-                    text: "> Food and Drink",
+                    text: "Food and Drink",
                     url: "#"
                 },
  
@@ -88,30 +88,31 @@ var app2 = new Vue ({
 
             VisitArray:[
                 {
-                    text: "> Admission",
+                    text: "Admission",
                     url: "#"
                 },
 
                 {
-                    text: "> Contact Us",
+                    text: "Contact Us",
                     url: "#"
                 },
 
                 {
-                    text: "> FAQs",
+                    text: "FAQs",
                     url: "#"
                 },
 
                 {
-                    text: "> Request Information",
+                    text: "Request Information",
                     url: "#"
                 },
 
                 {
-                    text: "> Privacy Notice",
+                    text: "Privacy Notice",
                     url: "#"
                 },
 
             ],
+
         },
 })

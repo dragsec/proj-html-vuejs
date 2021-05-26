@@ -321,7 +321,7 @@ header {
   margin-top: 50px;
 }
 .containerG > div {
-  height: 400px;
+  height: 425px;
   width: 340px;
   display: inline-block;
 
@@ -449,6 +449,9 @@ header {
   display: inline-block;
   float: right;
   padding-left: 20px;
+}
+.copycontainer  > p > a{
+  text-decoration: none;
 }
 
 

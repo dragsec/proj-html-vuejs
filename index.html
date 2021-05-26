@@ -196,7 +196,7 @@
 
                 <div>
                     <p>
-                        <span class="textsmaller redtext textbold"><u>Insight is Picwik</u></span><span class="textsmaller greytext">University's thought leadership publication for sharing <br>
+                        <span class="textsmaller redtext textbold"><u>Insight is Picwik</u> </span><span class="textsmaller greytext"> University's thought leadership publication for sharing <br>
                         knowledge on management, technology and innovation.
                         </span> 
                     </p>
@@ -219,7 +219,7 @@
                     
                     <p v-for="link in SupportArray" class="footfoot">
                         <a :href="link.url" v-if="link.url">
-                            {{link.text}}
+                            > {{link.text}}
                         </a>
                     </p>
                 </div>
@@ -229,7 +229,7 @@
 
                     <p v-for="link in ExploreArray" class="footfoot">
                         <a :href="link.url" v-if="link.url">
-                            {{link.text}}
+                            > {{link.text}}
                         </a>
                     </p>
                 </div>
@@ -239,7 +239,7 @@
 
                     <p v-for="link in VisitArray" class="footfoot">
                         <a :href="link.url" v-if="link.url">
-                            {{link.text}}
+                            > {{link.text}}
                         </a>
                     </p>
                 </div>
@@ -254,10 +254,16 @@
                     © Copyright 2020 tophive. All Rights Reserved.
                 </div>
 
-                <p class="greytext textsmaller">Privacy</p>
+                <p v-for="link in SupportArray">
+                    <a href="link in SupportArray" class="greytext textsmaller">
+                        {{link.text}}
+                    </a>
+                </p>
+
+                <!-- <p class="greytext textsmaller">Privacy</p>
                 <p class="greytext textsmaller">Terms</p>
                 <p class="greytext textsmaller">Cookie Policy</p>
-                <p class="greytext textsmaller">Sitemap</p>
+                <p class="greytext textsmaller">Sitemap</p> -->
             </div>
         </div>
     </footer>
