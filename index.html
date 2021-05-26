@@ -183,7 +183,7 @@
     </main>
 
     <!-- ------------------------- -->
-    <footer>
+    <footer id="app2">
         <!-- 8 footer -->
         <div class="footer1">
             <div class="footercontainer1">
@@ -216,13 +216,32 @@
                 </div>
                 <div>
                     <p class="textlightwelter whitetext">Support Us</p>
-                    kkk
+                    
+                    <p v-for="link in SupportArray" class="footfoot">
+                        <a :href="link.url" v-if="link.url">
+                            {{link.text}}
+                        </a>
+                    </p>
                 </div>
+
                 <div>
                     <p class="textlightwelter whitetext">Explore</p>
+
+                    <p v-for="link in ExploreArray" class="footfoot">
+                        <a :href="link.url" v-if="link.url">
+                            {{link.text}}
+                        </a>
+                    </p>
                 </div>
+
                 <div>
                     <p class="textlightwelter whitetext">Visit</p>
+
+                    <p v-for="link in VisitArray" class="footfoot">
+                        <a :href="link.url" v-if="link.url">
+                            {{link.text}}
+                        </a>
+                    </p>
                 </div>
 
             </div>

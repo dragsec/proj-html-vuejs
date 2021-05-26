@@ -426,6 +426,13 @@ header {
 }
 
 
+.footfoot > a{
+  font-size: 5px;
+  text-decoration: none;
+  color: #A3B5CA;
+  font-size: 14px;
+}
+
 
 .copyright{
   background-color: #15222E;
