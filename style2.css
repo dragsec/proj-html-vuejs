@@ -1,0 +1,34 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: #192735;
+}
+
+.herox{
+    height: 1031px;
+    background-repeat: no-repeat;
+    position: relative;
+    background-image: url(images/heroedit2.jpg);
+  }
+
+.test5{
+    font-size: 45px;
+    text-align: center;
+    margin: auto;
+    padding-top: 200px;
+}
+
+.test6{
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+}
+.test6 > a{
+    text-decoration: none;
+}

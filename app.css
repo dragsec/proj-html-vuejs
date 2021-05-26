@@ -7,7 +7,7 @@
 
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: #192735;;
+  color: #192735;
 }
 
 
@@ -388,7 +388,7 @@ header {
   align-items: center;
 }
 
-.footercontainer1 > div{
+.footercontainer1 > div, .footercontainer1 > a{
   display: inline-block;
   margin-right: 40px;
 }
@@ -400,7 +400,6 @@ header {
 .place1{
   height: 50px;
   width: 300px;
-  display: inline-block;
 }
 .btnred{
   background-color: #D74D52;
@@ -409,6 +408,12 @@ header {
   display: inline-block;
   text-align: center;
   line-height: 55px;
+
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  
+  text-decoration: none;
 }
 
 .footercontainer2{
