@@ -7,6 +7,7 @@
 
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #192735;;
 }
 
 
@@ -135,6 +136,25 @@ header {
   position:absolute;
   z-index: 1;
 }
+
+.ulhoriz{
+  list-style-type: none;
+  overflow: hidden;
+}
+.ulhoriz > li{
+  float: left;
+}
+
+.ulhoriz > li > a{
+  display: block;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  color: #192735;
+  font-weight: bold;
+}
+
+
 
 
 /* 2 hero */

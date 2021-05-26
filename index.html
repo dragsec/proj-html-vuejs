@@ -6,13 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>proj-html-vuejs</title>
     <link rel="stylesheet" href="app.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 <body>
     <!-- ------------------------- -->
-    <header> 
+    <header id="app"> 
         <!-- 1 header/navbar -->
-        <img src="img/Logo.jpg" alt="" class="redlogo">
-        header navbar header navbar
+        <img src="img/Logo.jpg" alt="" class="redlogo clearfix">
+        <div class="floatright">
+            <ul class="ulhoriz">
+                <li v-for="link in LinkArray">
+                    <a :href="link.url" v-if="link.url">
+                        {{link.text}}
+                    </a>
+                </li>
+            </ul>
+        </div>
     </header>
 
     <!-- ------------------------- -->
@@ -186,8 +196,9 @@
 
                 <div>
                     <p>
-                       <span class="textsmaller redtext textbold"><u>Insight is Picwik</u></span><span class="textsmaller greytext">University's thought leadership publication for sharing <br>
-                    knowledge on management, technology and innovation.</span> 
+                        <span class="textsmaller redtext textbold"><u>Insight is Picwik</u></span><span class="textsmaller greytext">University's thought leadership publication for sharing <br>
+                        knowledge on management, technology and innovation.
+                        </span> 
                     </p>
 
                     <p>
@@ -234,4 +245,5 @@
 
 
 </body>
+<script src="myScript.js"></script>
 </html>
