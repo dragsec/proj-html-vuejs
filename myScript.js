@@ -1,5 +1,11 @@
 var app = new Vue ({
     el: "#app",
+    methods: {
+        LearnMore: function(event) {
+            alert("Site is not fully ready yet, please subscribe to our newsletter for the latest updates!")
+            }
+        },
+
         data : {
             LinkArray:[
                 
@@ -28,12 +34,8 @@ var app = new Vue ({
                     url:"#",
                 },
             ],
-        },
-})
 
-var app2 = new Vue ({
-    el: "#app2",
-        data : {
+
             SupportArray:[
                 
                 {
@@ -113,6 +115,5 @@ var app2 = new Vue ({
                 },
 
             ],
-
         },
 })

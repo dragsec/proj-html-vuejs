@@ -114,6 +114,12 @@ body {
   width: 100px;
   text-align: center;
   padding: 5px 20px;
+  
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  color: #192735;
 }
 
 .clearfix::after{

@@ -10,265 +10,266 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 <body>
-    <!-- ------------------------- -->
-    <header id="app"> 
-        <!-- 1 header/navbar -->
-        <img src="img/Logo.jpg" alt="" class="redlogo clearfix">
-        <div class="floatright">
-            <ul class="ulhoriz">
-                <li v-for="link in LinkArray">
-                    <a :href="link.url" v-if="link.url">
-                        {{link.text}}
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </header>
+    <div id="app">
+        <!-- ------------------------- -->
+        <header> 
+            <!-- 1 header/navbar -->
+            <img src="img/Logo.jpg" alt="" class="redlogo clearfix">
+            <div class="floatright">
+                <ul class="ulhoriz">
+                    <li v-for="link in LinkArray">
+                        <a :href="link.url" v-if="link.url">
+                            {{link.text}}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
 
-    <!-- ------------------------- -->
-    <main>
-        <!-- 2 hero -->
-        <div class="hero1">
-            <p class="fonthero pad1">Professional Development For</p>
-            <p class="fonthero">Coaches And Leaders</p>
-            <p class="centerborder">Learn More</p>
-        </div>
-
-        <!-- 3 numbers -->
-        <div>
-            <p class="textmedium textcenter">Since 2000, weve been partnering with education leaders to <br> <span class="redtext">increase equity and achievement</span> for all students.</p>
-
-            <div class="container1 clearfix">
-                <div class="floatleft">
-                    <img src="svg/svg-0.svg" alt="">
-                    <p class="textwelter">Online Coaching</p>
-                    <p class="textsmall">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, neque. Voluptas ea quaerat exercitationem in fuga sed eos.</p>
-                </div>
-                <div class="floatleft padlaterali">
-                    <img src="svg/svg-1.svg" alt="">
-                    <p class="textwelter">Consultation</p>
-                    <p class="textsmall">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, neque. Voluptas ea quaerat exercitationem in fuga sed eos.</p>
-                </div>
-                <div class="floatleft">
-                    <img src="svg/svg-2.svg" alt="">
-                    <p class="textwelter">Life Consultation</p>
-                    <p class="textsmall">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, neque. Voluptas ea quaerat exercitationem in fuga sed eos.</p>
-                </div>
+        <!-- ------------------------- -->
+        <main>
+            <!-- 2 hero -->
+            <div class="hero1">
+                <p class="fonthero pad1">Professional Development For</p>
+                <p class="fonthero">Coaches And Leaders</p>
+                <a href="#" class="centerborder" @click="LearnMore()">Learn More</a>
             </div>
 
-            <div class="container2 clearfix">
-                <div class="floatleft">
-                    <p class="textwelter"><span id="textorangebig"> 6500 + </span>Students</p>
-                </div>
-                <div class="floatleft padlaterali">
-                    <p class="textwelter"><span id="textredbig"> 200 + </span>Online Courses</p>
-                </div>
-                <div class="floatleft">
-                    <p class="textwelter"><span id="textgreenbig"> 100 % </span>Happy Clients</p>
-                </div>
-            </div>
-        </div>
+            <!-- 3 numbers -->
+            <div>
+                <p class="textmedium textcenter">Since 2000, weve been partnering with education leaders to <br> <span class="redtext">increase equity and achievement</span> for all students.</p>
 
-        <!-- 4 courses -->
-        <div>
-            <p class="textmedium textcenter">Recent Courses</p>
-            <p class="textsmall textcenter">Wether you're considering a foundation course or an undergraduate degree master's <br> or a PhD, academics is a place where students thrive.</p>
-            
-            <div class="container3 clearfix">
-                <div class="floatleft">
-                    <img src="img/bruce-mars-FWVMhUa_wbY-unsplash.jpg" alt="">
-                    <p class="backgroundred1 textsmall">Free</p>
-                    <p class="textlightwelter">UI Animation using Sketch 3, <br> Principle App, and Flinto</p>
-                    <p class="textsmall">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, neque. Voluptas ea quaerat exercitationem in fuga sed eos.</p>
-                    <p class="textsmaller redtext padtopsmall">Course by : University</p>
-                </div>
-                <div class="floatleft padlaterali2">
-                    <img src="img/course-1-2.jpg" alt="">
-                    <p class="backgroundred1 textsmall">Free</p>
-                    <p class="textlightwelter">The Ultimate Drawing Course <br> - Beginner to Advanced</p>
-                    <p class="textsmall">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, neque. Voluptas ea quaerat exercitationem in fuga sed eos.</p>
-                    <p class="textsmaller redtext padtopsmall">Course by : University</p>
-                </div>
-                <div class="floatleft">
-                    <img src="img/william-thomas-ny6tO4ItOEY-unsplash.jpg" alt="">
-                    <p class="backgroundred1 textsmall">Free</p>
-                    <p class="textlightwelter">Life Your Complete Guide to <br> Photography</p>
-                    <p class="textsmall">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, neque. Voluptas ea quaerat exercitationem in fuga sed eos.</p>
-                    <p class="textsmaller redtext padtopsmall">Course by : University</p>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- 5 quote and events -->
-        <div>
-            <p class="textmedium2 textcenter bgquote">
-                "Academics was committed to my success from the moment I attended an Open <br>
-                House. With the support of caring <span class="textmedium redtext"><u>advisors, professors, and staff</u></span> i was able to <br>
-                thrive in courses, gain recognition through scholarships, and finish <span class="textmedium">with <br>
-                confidence in my <span class="redtext"><u>@academics</u></span> abilities.</span> "
-            </p>
-
-            <div class="container4 bordertest">
-                <div class="vid4">
-                    <div class="play4 redtext">▷
+                <div class="container1 clearfix">
+                    <div class="floatleft">
+                        <img src="svg/svg-0.svg" alt="">
+                        <p class="textwelter">Online Coaching</p>
+                        <p class="textsmall">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, neque. Voluptas ea quaerat exercitationem in fuga sed eos.</p>
+                    </div>
+                    <div class="floatleft padlaterali">
+                        <img src="svg/svg-1.svg" alt="">
+                        <p class="textwelter">Consultation</p>
+                        <p class="textsmall">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, neque. Voluptas ea quaerat exercitationem in fuga sed eos.</p>
+                    </div>
+                    <div class="floatleft">
+                        <img src="svg/svg-2.svg" alt="">
+                        <p class="textwelter">Life Consultation</p>
+                        <p class="textsmall">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, neque. Voluptas ea quaerat exercitationem in fuga sed eos.</p>
                     </div>
                 </div>
-                <div class="upcoming4">
-                    <span class="events">
-                        Upcoming Events
-                    </span>
-                    <p class="textlightwelter padx">Princeton offers admission information sessions <br>
-                    and student-led tours to campus visitors</p>
-                    <p class="textbold textsmaller">Learn more ></p>
-                    <p class="textlightwelter">Admission information sessions and student-led <br>
-                    tours to campus visitors</p>
-                    <p class="textbold textsmaller">Learn more ></p>
-                    <p class="textbold padleft1 textsmaller">Event Locations ></p>
-                </div>
-            </div>
-        </div>
 
-        <!-- 6 blog -->
-        <div>
-            <p class="textmedium textcenter">Latest From Our Blogs</p>
-            <p class="textsmall textcenter textbold">Wether you're considering a foundation course or an undergraduate degree master's <br> or a PhD, academics is a place where students thrive.</p>
-            
-            <div class="containerG clearfix">
-                <div class="floatleft">
-                    <img src="img/course-1-2.jpg" alt="">
-                    <p class="textsmaller"><img src="svg/svg-0.svg" alt=""> Admin &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="svg/svg-1.svg" alt=""> Education</p>
-                    <p class="textlightwelter">Peer pressure changes how teens tackle inequality</p>
-                    <p class="backgroundred2 lineX"></p>
-                    <p class="textsmaller padtopsmall">Read more ></p>
-                </div>
-                <div class="floatleft padlaterali2">
-                    <img src="img/news-3-2.jpg" alt="">
-                    <p class="textsmaller"><img src="svg/svg-0.svg" alt=""> Admin &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="svg/svg-1.svg" alt=""> Education</p>
-                    <p class="textlightwelter">Lewisham Live Mixtape celebrates borough's</p>
-                    <p class="backgroundred2 lineX"></p>
-                    <p class="textsmaller padtopsmall">Read more ></p>
-                </div>
-                <div class="floatleft">
-                    <img src="img/bruce-mars-FWVMhUa_wbY-unsplash.jpg" alt="">
-                    <p class="textsmaller"><img src="svg/svg-0.svg" alt=""> Admin &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="svg/svg-1.svg" alt=""> Education</p>
-                    <p class="textlightwelter">Turner Prize winner's work to open Gold on Film festival</p>
-                    <p class="backgroundred2 lineX"></p>
-                    <p class="textsmaller padtopsmall">Read more ></p>
-                </div>
-            </div>
-        </div>
-
-        <!-- 7 immagini varie -->
-        <div class="photos clearfix">
-
-            <div class="floatleft">
-                <img src="img/bruce-mars-FWVMhUa_wbY-unsplash.jpg" alt="">
-            </div>
-
-            <div class="floatleft">
-                <img src="img/course-1-2.jpg" alt="">
-            </div>
-
-            <div class="floatleft">
-                <img src="img/heroedit.jpg" alt="">
-            </div>
-
-            <div class="floatleft">
-                <img src="img/course-1-2.jpg" alt="">
-            </div>
-
-        </div> 
-
-    </main>
-
-    <!-- ------------------------- -->
-    <footer id="app2">
-        <!-- 8 footer -->
-        <div class="footer1">
-            <div class="footercontainer1">
-                <div class="vertical1">
-                </div>
-
-                <input type="text" placeholder="Subscribe to our newsletter" class="place1">
-                 
-                <a href="newsletter.html" class="btnred whitetext">Register</a>
-
-                <div>
-                    <p>
-                        <span class="textsmaller redtext textbold"><u>Insight is Picwik</u> </span><span class="textsmaller greytext"> University's thought leadership publication for sharing <br>
-                        knowledge on management, technology and innovation.
-                        </span> 
-                    </p>
-
-                    <p>
-                        <span class="textsmaller whitetext textbold">Take me there ></span>
-                    </p>
+                <div class="container2 clearfix">
+                    <div class="floatleft">
+                        <p class="textwelter"><span id="textorangebig"> 6500 + </span>Students</p>
+                    </div>
+                    <div class="floatleft padlaterali">
+                        <p class="textwelter"><span id="textredbig"> 200 + </span>Online Courses</p>
+                    </div>
+                    <div class="floatleft">
+                        <p class="textwelter"><span id="textgreenbig"> 100 % </span>Happy Clients</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="footercontainer2">
-                <div>
-                    <p class="textlightwelter whitetext">Contact Us</p>
-                    <p class="textsmaller greytext">⚲ 900 Wood Street, MI <br> New York 48607</p>
-                    <p class="textsmaller greytext">✆ +56 345 678 000-69</p>
-                    <p class="textsmaller greytext">✉ info@example.com</p>
-                </div>
-                <div>
-                    <p class="textlightwelter whitetext">Support Us</p>
-                    
-                    <p v-for="link in SupportArray" class="footfoot">
-                        <a :href="link.url" v-if="link.url">
-                            > {{link.text}}
-                        </a>
-                    </p>
-                </div>
-
-                <div>
-                    <p class="textlightwelter whitetext">Explore</p>
-
-                    <p v-for="link in ExploreArray" class="footfoot">
-                        <a :href="link.url" v-if="link.url">
-                            > {{link.text}}
-                        </a>
-                    </p>
-                </div>
-
-                <div>
-                    <p class="textlightwelter whitetext">Visit</p>
-
-                    <p v-for="link in VisitArray" class="footfoot">
-                        <a :href="link.url" v-if="link.url">
-                            > {{link.text}}
-                        </a>
-                    </p>
+            <!-- 4 courses -->
+            <div>
+                <p class="textmedium textcenter">Recent Courses</p>
+                <p class="textsmall textcenter">Wether you're considering a foundation course or an undergraduate degree master's <br> or a PhD, academics is a place where students thrive.</p>
+                
+                <div class="container3 clearfix">
+                    <div class="floatleft">
+                        <img src="img/bruce-mars-FWVMhUa_wbY-unsplash.jpg" alt="">
+                        <p class="backgroundred1 textsmall">Free</p>
+                        <p class="textlightwelter">UI Animation using Sketch 3, <br> Principle App, and Flinto</p>
+                        <p class="textsmall">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, neque. Voluptas ea quaerat exercitationem in fuga sed eos.</p>
+                        <p class="textsmaller redtext padtopsmall">Course by : University</p>
+                    </div>
+                    <div class="floatleft padlaterali2">
+                        <img src="img/course-1-2.jpg" alt="">
+                        <p class="backgroundred1 textsmall">Free</p>
+                        <p class="textlightwelter">The Ultimate Drawing Course <br> - Beginner to Advanced</p>
+                        <p class="textsmall">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, neque. Voluptas ea quaerat exercitationem in fuga sed eos.</p>
+                        <p class="textsmaller redtext padtopsmall">Course by : University</p>
+                    </div>
+                    <div class="floatleft">
+                        <img src="img/william-thomas-ny6tO4ItOEY-unsplash.jpg" alt="">
+                        <p class="backgroundred1 textsmall">Free</p>
+                        <p class="textlightwelter">Life Your Complete Guide to <br> Photography</p>
+                        <p class="textsmall">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, neque. Voluptas ea quaerat exercitationem in fuga sed eos.</p>
+                        <p class="textsmaller redtext padtopsmall">Course by : University</p>
+                    </div>
                 </div>
 
             </div>
-        </div>
 
-        <!-- 9 copyright -->
-        <div class="copyright">
-            <div class="copycontainer clearfix">
-                <div class="greytext textsmaller">
-                    © Copyright 2020 tophive. All Rights Reserved.
-                </div>
-
-                <p v-for="link in SupportArray">
-                    <a href="link in SupportArray" class="greytext textsmaller">
-                        {{link.text}}
-                    </a>
+            <!-- 5 quote and events -->
+            <div>
+                <p class="textmedium2 textcenter bgquote">
+                    "Academics was committed to my success from the moment I attended an Open <br>
+                    House. With the support of caring <span class="textmedium redtext"><u>advisors, professors, and staff</u></span> i was able to <br>
+                    thrive in courses, gain recognition through scholarships, and finish <span class="textmedium">with <br>
+                    confidence in my <span class="redtext"><u>@academics</u></span> abilities.</span> "
                 </p>
 
-                <!-- <p class="greytext textsmaller">Privacy</p>
-                <p class="greytext textsmaller">Terms</p>
-                <p class="greytext textsmaller">Cookie Policy</p>
-                <p class="greytext textsmaller">Sitemap</p> -->
+                <div class="container4 bordertest">
+                    <div class="vid4">
+                        <div class="play4 redtext">▷
+                        </div>
+                    </div>
+                    <div class="upcoming4">
+                        <span class="events">
+                            Upcoming Events
+                        </span>
+                        <p class="textlightwelter padx">Princeton offers admission information sessions <br>
+                        and student-led tours to campus visitors</p>
+                        <p class="textbold textsmaller">Learn more ></p>
+                        <p class="textlightwelter">Admission information sessions and student-led <br>
+                        tours to campus visitors</p>
+                        <p class="textbold textsmaller">Learn more ></p>
+                        <p class="textbold padleft1 textsmaller">Event Locations ></p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </footer>
 
+            <!-- 6 blog -->
+            <div>
+                <p class="textmedium textcenter">Latest From Our Blogs</p>
+                <p class="textsmall textcenter textbold">Wether you're considering a foundation course or an undergraduate degree master's <br> or a PhD, academics is a place where students thrive.</p>
+                
+                <div class="containerG clearfix">
+                    <div class="floatleft">
+                        <img src="img/course-1-2.jpg" alt="">
+                        <p class="textsmaller"><img src="svg/svg-0.svg" alt=""> Admin &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="svg/svg-1.svg" alt=""> Education</p>
+                        <p class="textlightwelter">Peer pressure changes how teens tackle inequality</p>
+                        <p class="backgroundred2 lineX"></p>
+                        <p class="textsmaller padtopsmall">Read more ></p>
+                    </div>
+                    <div class="floatleft padlaterali2">
+                        <img src="img/news-3-2.jpg" alt="">
+                        <p class="textsmaller"><img src="svg/svg-0.svg" alt=""> Admin &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="svg/svg-1.svg" alt=""> Education</p>
+                        <p class="textlightwelter">Lewisham Live Mixtape celebrates borough's</p>
+                        <p class="backgroundred2 lineX"></p>
+                        <p class="textsmaller padtopsmall">Read more ></p>
+                    </div>
+                    <div class="floatleft">
+                        <img src="img/bruce-mars-FWVMhUa_wbY-unsplash.jpg" alt="">
+                        <p class="textsmaller"><img src="svg/svg-0.svg" alt=""> Admin &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="svg/svg-1.svg" alt=""> Education</p>
+                        <p class="textlightwelter">Turner Prize winner's work to open Gold on Film festival</p>
+                        <p class="backgroundred2 lineX"></p>
+                        <p class="textsmaller padtopsmall">Read more ></p>
+                    </div>
+                </div>
+            </div>
 
+            <!-- 7 immagini varie -->
+            <div class="photos clearfix">
+
+                <div class="floatleft">
+                    <img src="img/bruce-mars-FWVMhUa_wbY-unsplash.jpg" alt="">
+                </div>
+
+                <div class="floatleft">
+                    <img src="img/course-1-2.jpg" alt="">
+                </div>
+
+                <div class="floatleft">
+                    <img src="img/heroedit.jpg" alt="">
+                </div>
+
+                <div class="floatleft">
+                    <img src="img/course-1-2.jpg" alt="">
+                </div>
+
+            </div> 
+
+        </main>
+
+        <!-- ------------------------- -->
+        <footer id="app2">
+            <!-- 8 footer -->
+            <div class="footer1">
+                <div class="footercontainer1">
+                    <div class="vertical1">
+                    </div>
+
+                    <input type="text" placeholder="Subscribe to our newsletter" class="place1">
+                    
+                    <a href="newsletter.html" class="btnred whitetext">Register</a>
+
+                    <div>
+                        <p>
+                            <span class="textsmaller redtext textbold"><u>Insight is Picwik</u> </span><span class="textsmaller greytext"> University's thought leadership publication for sharing <br>
+                            knowledge on management, technology and innovation.
+                            </span> 
+                        </p>
+
+                        <p>
+                            <span class="textsmaller whitetext textbold">Take me there ></span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="footercontainer2">
+                    <div>
+                        <p class="textlightwelter whitetext">Contact Us</p>
+                        <p class="textsmaller greytext">⚲ 900 Wood Street, MI <br> New York 48607</p>
+                        <p class="textsmaller greytext">✆ +56 345 678 000-69</p>
+                        <p class="textsmaller greytext">✉ info@example.com</p>
+                    </div>
+                    <div>
+                        <p class="textlightwelter whitetext">Support Us</p>
+                        
+                        <p v-for="link in SupportArray" class="footfoot">
+                            <a :href="link.url" v-if="link.url">
+                                > {{link.text}}
+                            </a>
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="textlightwelter whitetext">Explore</p>
+
+                        <p v-for="link in ExploreArray" class="footfoot">
+                            <a :href="link.url" v-if="link.url">
+                                > {{link.text}}
+                            </a>
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="textlightwelter whitetext">Visit</p>
+
+                        <p v-for="link in VisitArray" class="footfoot">
+                            <a :href="link.url" v-if="link.url">
+                                > {{link.text}}
+                            </a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 9 copyright -->
+            <div class="copyright">
+                <div class="copycontainer clearfix">
+                    <div class="greytext textsmaller">
+                        © Copyright 2020 tophive. All Rights Reserved.
+                    </div>
+
+                    <p v-for="link in SupportArray">
+                        <a href="link in SupportArray" class="greytext textsmaller">
+                            {{link.text}}
+                        </a>
+                    </p>
+
+                    <!-- <p class="greytext textsmaller">Privacy</p>
+                    <p class="greytext textsmaller">Terms</p>
+                    <p class="greytext textsmaller">Cookie Policy</p>
+                    <p class="greytext textsmaller">Sitemap</p> -->
+                </div>
+            </div>
+        </footer>
+
+    </div>
 </body>
 <script src="myScript.js"></script>
 </html>
